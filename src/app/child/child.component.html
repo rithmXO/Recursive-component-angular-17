@@ -1,0 +1,14 @@
+<section
+  style="
+    background-color: cadetblue;
+    margin: 20px;
+    border: white 1px;
+    border-style: solid;
+  "
+>
+  <p>child works!</p>
+  <button (click)="showParent = true">show parent</button>
+  @if(showParent){ @defer{
+  <app-parent></app-parent>
+  }}
+</section>
